@@ -5,24 +5,40 @@ import { useNavigate } from "react-router";
 // import picture2 from "../photos/pexels-curtis-adams-8031899.jpg"
 
 const detail= [
-    { deal: "Luxury Mansion, 5 Bedroom Fully Detached House, all Rooms are Ensuite + 1 Guest Room downstairs.It has a stand alone Self-Contained Boys Quarters, One stand alone Laundry room, Well fitted Kitchen fully equipped with all kitchen appliances,2 Pantries,Large Sitting area plus a Family Lounge upstairs.Large Walk-in Closet, and Box room.Location: Yaba Lagos Price: NGN75Million Features - All Rooms Ensuite- Fitted Kitchen- 24 Hours Security- Interlocked Floor- Water Heater- Elevator- BQ- Pop"},
+    { deal: "Brand new and fully serviced waterfront 2Bedroom semidetached duplex with state-of-art facilities and healthy atmosphere for comfortable living in the mojisola onikoyi, off banana island estate road, old ikoyi.This is an urgent sale hence the price is comfortable for prospective buyer. Content from Nigeria Property Centre 200,000 million naira"},
+
+
+    { deal: "2 bedroom House for sale Ikorodu Lagos selling for ₦70,000,000. See property details on PropertyPro.ng or browse all our range of properties in Ikorodu Lagos4 bedroom House for sale in Ikorodu Lagos Buy 4 bedroom House for sale 4 BEDROOM DETACHED DUPLEX in Ikorodu Lagos is a House. ✓ Real-time photos. Contact now for quick details on 4 BEDROOM DETACHED DUPLEXFOR SALE! "},
+
+
+    
+    { deal: " 4 bedroom House for sale Hu Ilupeju Lagos selling for ₦100,000,000. See property details on PropertyPro.ng or browse all our range of properties in Ilupeju Lagos4 bedroom House for sale in Ilupeju Lagos Buy 4 bedroom House for sale Newly built 4bed room semi detached in Ilupeju Lagos is a House. ✓ Real-time photos. Contact now for quick details on Newly built 4bed room semi detached"},
+
+
+    { deal: " 3 bedroom House for sale ONIRU Victoria Island Lagos selling for ₦140,000,000. See property details on PropertyPro.ng or browse all our range of properties in ONIRU Victoria Island Lagos3 bedroom House for sale in ONIRU Victoria Island Lagos Buy 3 bedroom House for sale 3 bedroom apartment in ONIRU Victoria Island Lagos is a House. ✓ Real-time photos. Contact now for quick details on 3 bedroom apartment3 Bed| 3 Baths| 4 Toilets| BQ"},
+
+
+    { deal: "3 bedroom House for sale Alagomeji Yaba Lagos selling for ₦55,000,000. See property details on PropertyPro.ng or browse all our range of properties in Alagomeji Yaba Lagos3 bedroom House for sale in Alagomeji Yaba Lagos Buy 3 bedroom House for sale 3 bedroom flat in Alagomeji Yaba Lagos is a House. ✓ Real-time photos. Contact now for quick details on 3 bedroom flat The property is 3 bedroom flat apartment with each unit with 3car pack and watching machine in a good location. 55m per flat "},
+
 
     { deal: "Full DescriptionHouse for sale Ebute Metta Yaba Lagos selling for ₦40,000,000. See property details on PropertyPro.ng or browse all our range of properties in Ebute Metta Yaba Lagos House for sale in Ebute Metta Yaba Lagos Buy House for sale 2 bedroom apartment in Ebute Metta Yaba Lagos is a House. ✓ Real-time photos. Contact now for quick details on 2 bedroom apartmentThere is 2 bedroom apartment in a good location of Ebute metta close to Yaba. Mini flat available in the same compound at the rate of 28m"},
+
+    
+    { deal: "6 bedroom House for sale Iponri Surulere Lagos selling for ₦200,000,000. See property details on PropertyPro.ng or browse all our range of properties in Iponri Surulere Lagos6 bedroom House for sale in Iponri Surulere Lagos Buy 6 bedroom House for sale 6BED MANSION+ BQ & STUDY!! in Iponri Surulere Lagos is a House. ✓ Real-time photos. Contact now for quick details on 6BED MANSION+ BQ & STUDY!! "},
+
+
 
     { deal: "5 bedroom House for sale Off Oduduwa Way, Ikeja GRA Ikeja Lagos selling for ₦320,000,000. See property details on PropertyPro.ng or browse all our range of properties in Ikeja GRA Ikeja Lagos5 bedroom House for sale in Ikeja GRA Ikeja Lagos Buy 5 bedroom House for sale 5BED DETACHED DUPLEX+ BQ!!! in Ikeja GRA Ikeja Lagos is a House. ✓ Real-time photos. Contact now for quick details on 5BED DETACHED DUPLEX+ BQ!!!FOR SALE!!! LUXURY BUILT & TASTEFULLY FINISHED 5 BEDROOM DETACHED DUPLEX+ BQ!!! FEATURES: A ROOM BQ ALL ROOMS ENSUITE+ GUEST TOILET BEAUTIFUL P.O.P FINISHINGS SCREEDED WALL ALL ROUND POLISH TILES KITCHEN FITTED WITH CABINETS CCTV SURVEILLANCE CINEMA SWIMMING POOL AREA FENCED GATED+ CAR PARK IN A SERENE/HIGHLY SECURED ESTATE... LOCATION:OFF ODUDUWA WAY,IKEJA GRA LAGOS... TITLE:CERTIFICATE OF OCCUPANCY... PRICE:320MILLION..."},
 
     { deal: " 4 bedroom House for sale Okupe Estate, Maryland Lagos selling for ₦100,000,000. See property details on PropertyPro.ng or browse all our range of properties in Maryland Lagos4 bedroom House for sale in Maryland Lagos Buy 4 bedroom House for sale 4BED TERRACE DUPLEXES!!! in Maryland Lagos is a House. ✓ Real-time photos. Contact now for quick details on 4BED TERRACE DUPLEXES!!! FOR SALE!!!"},
 
-    { deal: "4 bedroom House for sale Newly Built Contemporary 4 Bedroom Semi Detached Duplex With Bq, Ologolo Lekki Lagos selling for ₦95,000,000. See property details on PropertyPro.ng or browse all our range of properties in Ologolo Lekki Lagos4 bedroom House for sale in Ologolo Lekki Lagos Buy 4 bedroom House for sale 4 bedroom semi detached duplex in Ologolo Lekki Lagos is a House. ✓ Real-time photos. Contact now for quick details on 4 bedroom semi detached duplex Newly built, exquisitely designed 4 bedroom semi detached duplex with Bq, fully fitted kitchen, all rooms en-suite, spacious bedrooms and living room, spacious compound, CCTV and a lot more.Location: Ologolo, LekkiNB: This property and also several other properties are available, please feel free to contact us with your specifications, Thank you. "},
+    { deal: "3 bedroom House for sale Newly Built Contemporary 3 Bedroom Semi Detached Duplex With Bq, Ologolo Lekki Lagos selling for ₦95,000,000. See property details on PropertyPro.ng or browse all our range of properties in Ologolo Lekki Lagos4 bedroom House for sale in Ologolo Lekki Lagos Buy 4 bedroom House for sale 4 bedroom semi detached duplex in Ologolo Lekki Lagos is a House. ✓ Real-time photos. Contact now for quick details on 4 bedroom semi detached duplex Newly built, exquisitely designed 4 bedroom semi detached duplex with Bq, fully fitted kitchen, all rooms en-suite, spacious bedrooms and living room, spacious compound, CCTV and a lot more.Location: Ologolo, LekkiNB: This property and also several other properties are available, please feel free to contact us with your specifications, Thank you. "},
 
-    { deal: " "},
 
-    { deal: " "},
+   
 
-    { deal: " "},
 
-    { deal: " "},
-    { deal: " "},
+    
 ]
 
 
@@ -227,76 +243,88 @@ export const properties = [
     image2:img[1].pic ,
     image3:img[2].pic ,
     image4:img[3].pic ,
-   
+    information: detail[0].deal,
     location: "ikoyi",
+    price: "#200,000.000"
   },
   {
     id: 2,
-    name: "property3",
+    name: "2BedRoom Apartment",
     image:  img[4].pic ,
     image5: img[5].pic,
     image6: img[6].pic,
     image7: img[7].pic,
     image8: img[8].pic,
+    information: detail[1].deal,
     location: "IKORODU",
+    price:"#40,000.000"
   },
   {
     id: 3,
-    name: "property4",
+    name: "4BedRoom Apartment",
     image: img[9].pic,
     image10: img[10].pic,
     image11: img[11].pic,
     image12: img[12].pic,
     image13: img[13].pic,
+    information: detail[2].deal,
     location: "ILUPEJU",
-    // Details: detail[0].deal
+    price:"#100,000.000"
+
 
   },
   {
     id: 4,
-    name: "property5",
+    name: "2Bedroom Apartment",
     image: img[14].pic,
     image15: img[15].pic,
     image16: img[16].pic,
     image17: img[17].pic,
+    information: detail[3].deal,
     location: "VICTORIA ISLAND",
+    price:"#140,000.000"
   },
   {
     id: 5,
-    name: "property6",
+    name: "3BedRoom Apartment",
     image: img[18].pic,
     image18: img[19].pic,
     image19: img[20].pic,
     image20: img[21].pic,
     image21: img[22].pic,
     // image22: img[23].pic,
-//  Details: detail[1].deal,
+ information: detail[4].deal,
     location: "YABA",
+    price:"#55,000,000"
   },
   {
     id: 6,
-    name: "property7",
+    name: "3BedRoom Apartment",
     image: img[23].pic,
     image22: img[24].pic,
     image23: img[25].pic,
     image24: img[26].pic,
     image25: img[27].pic,
+    information: detail[5].deal,
     location: "EBUTE-METTA",
+    price:"#40,000,000"
   },
   {
     id: 7,
-    name: "property8",
+    name: "6 Apartment",
     image: img[28].pic,
     image26: img[29].pic,
     image27: img[30].pic,
     image28: img[31].pic,
     image29: img[32].pic,
     image30: img[33].pic,
+    information: detail[6].deal,
     location: "SURULERE",
+    price:"#200,000,000"
   },
   {
     id: 8,
-    name: "property9",
+    name: "5BedRoom Apartment",
     image: img[34].pic,
     image31: img[35].pic,
     image32: img[36].pic,
@@ -305,33 +333,38 @@ export const properties = [
     image35: img[39].pic,
     image36: img[40].pic,
     image37: img[41].pic,
-    // Details: detail[2].deal,
+    information: detail[7].deal,
     location: "IKEJA",
+    price:"#320,000,000"
   },
   {
     id: 9,
-    name: "property10",
+    name: "4BedRoom Apartment",
     image: img[42].pic,
     image38: img[43].pic,
     image39: img[44].pic,
     image40: img[45].pic,
     image41: img[46].pic,
     image42: img[47].pic,
-    
+    information: detail[8].deal,
     location: "MARYLAND",
+    price:"#100,000,000"
   },
 
   {
     id: 10,
-    name: "2Bedroom flat",
-    image: img[48].pic,
+    name: "3Bedroom flat",
+    image:   img[48].pic,
     image43: img[49].pic,
     image44: img[50].pic,
     image45: img[51].pic,
     image46: img[52].pic,
     image47: img[53].pic,
+    information: detail[9].deal,
     location: "LEKKI",
+    price:"#95,000,000"
   },
+ 
 ];
 
 const Property = ({ onSelectProperty }) => {
@@ -353,9 +386,11 @@ const Property = ({ onSelectProperty }) => {
             }`}
             onClick={() => handlePropertyClick(property)}
           >
-            <img className="object-cover" src={property.image} alt="" />
+            <img className="object-cover w-52 h-52" src={property.image} alt="" />
             <h2 className="text-lg font-semibold">{property.name}</h2>
             <p className="text-gray-500">{property.location}</p>
+            <p className="text-gray-500">{property.price}</p>
+
 
           </div>
         ))}
