@@ -223,9 +223,6 @@ const img=[
     pic:"https://images.propertypro.ng/large/4-bedroom-semi-detached-duplex-pm5ghAtXzOpS9IB9s6K2.jpg"
 },
 
-{
-    pic:""
-},
 
 
 ]
@@ -239,10 +236,11 @@ export const properties = [
   {
     id: 1,
     name: "2BedRoom Apartment",
-    image: img[0].pic,
+    // image: img[0].pic,
     image2:img[1].pic ,
     image3:img[2].pic ,
     image4:img[3].pic ,
+    // image5: img[4].pic,
     information: detail[0].deal,
     location: "ikoyi",
     price: "#200,000.000"
@@ -251,10 +249,10 @@ export const properties = [
     id: 2,
     name: "2BedRoom Apartment",
     image:  img[4].pic ,
-    image5: img[5].pic,
-    image6: img[6].pic,
-    image7: img[7].pic,
-    image8: img[8].pic,
+    image2: img[5].pic,
+    image3: img[6].pic,
+    image4: img[7].pic,
+    image5: img[8].pic,
     information: detail[1].deal,
     location: "IKORODU",
     price:"#40,000.000"
@@ -263,10 +261,10 @@ export const properties = [
     id: 3,
     name: "4BedRoom Apartment",
     image: img[9].pic,
-    image10: img[10].pic,
-    image11: img[11].pic,
-    image12: img[12].pic,
-    image13: img[13].pic,
+    image2: img[10].pic,
+    image3: img[11].pic,
+    image4: img[12].pic,
+    image5: img[13].pic,
     information: detail[2].deal,
     location: "ILUPEJU",
     price:"#100,000.000"
@@ -277,9 +275,9 @@ export const properties = [
     id: 4,
     name: "2Bedroom Apartment",
     image: img[14].pic,
-    image15: img[15].pic,
-    image16: img[16].pic,
-    image17: img[17].pic,
+    image2: img[15].pic,
+    image3: img[16].pic,
+    image4: img[17].pic,
     information: detail[3].deal,
     location: "VICTORIA ISLAND",
     price:"#140,000.000"
@@ -288,10 +286,10 @@ export const properties = [
     id: 5,
     name: "3BedRoom Apartment",
     image: img[18].pic,
-    image18: img[19].pic,
-    image19: img[20].pic,
-    image20: img[21].pic,
-    image21: img[22].pic,
+    image2: img[19].pic,
+    image3: img[20].pic,
+    image4: img[21].pic,
+    image5: img[22].pic,
     // image22: img[23].pic,
  information: detail[4].deal,
     location: "YABA",
@@ -301,10 +299,10 @@ export const properties = [
     id: 6,
     name: "3BedRoom Apartment",
     image: img[23].pic,
-    image22: img[24].pic,
-    image23: img[25].pic,
-    image24: img[26].pic,
-    image25: img[27].pic,
+    image2: img[24].pic,
+    image3: img[25].pic,
+    image4: img[26].pic,
+    image5: img[27].pic,
     information: detail[5].deal,
     location: "EBUTE-METTA",
     price:"#40,000,000"
@@ -313,11 +311,10 @@ export const properties = [
     id: 7,
     name: "6 Apartment",
     image: img[28].pic,
-    image26: img[29].pic,
-    image27: img[30].pic,
-    image28: img[31].pic,
-    image29: img[32].pic,
-    image30: img[33].pic,
+    image2: img[29].pic,
+    image3: img[30].pic,
+    image4: img[31].pic,
+    image5: img[32].pic,
     information: detail[6].deal,
     location: "SURULERE",
     price:"#200,000,000"
@@ -326,13 +323,10 @@ export const properties = [
     id: 8,
     name: "5BedRoom Apartment",
     image: img[34].pic,
-    image31: img[35].pic,
-    image32: img[36].pic,
-    image33: img[37].pic,
-    image34: img[38].pic,
-    image35: img[39].pic,
-    image36: img[40].pic,
-    image37: img[41].pic,
+    image2: img[36].pic,
+    image3: img[37].pic,
+    image4: img[38].pic,
+    image5: img[39].pic,
     information: detail[7].deal,
     location: "IKEJA",
     price:"#320,000,000"
@@ -341,11 +335,10 @@ export const properties = [
     id: 9,
     name: "4BedRoom Apartment",
     image: img[42].pic,
-    image38: img[43].pic,
-    image39: img[44].pic,
-    image40: img[45].pic,
-    image41: img[46].pic,
-    image42: img[47].pic,
+    image2: img[43].pic,
+    image3: img[44].pic,
+    image4: img[45].pic,
+    image5: img[46].pic,
     information: detail[8].deal,
     location: "MARYLAND",
     price:"#100,000,000"
@@ -355,11 +348,10 @@ export const properties = [
     id: 10,
     name: "3Bedroom flat",
     image:   img[48].pic,
-    image43: img[49].pic,
-    image44: img[50].pic,
-    image45: img[51].pic,
-    image46: img[52].pic,
-    image47: img[53].pic,
+    image3: img[49].pic,
+    image4: img[50].pic,
+    image5: img[51].pic,
+    image2: img[52].pic,
     information: detail[9].deal,
     location: "LEKKI",
     price:"#95,000,000"
@@ -369,33 +361,65 @@ export const properties = [
 
 const Property = ({ onSelectProperty }) => {
     const [selectedProperty, setSelectedProperty] = useState(null);
+    const [locationFilter, setLocationFilter] = useState("");
+    const [apartment, setApartment] = useState("");
     const navigate = useNavigate();
   
     const handlePropertyClick = (property) => {
       setSelectedProperty(property);
       navigate(`/property/${property.id}`);
     };
+
+     const filteredProperties = properties.filter((property) =>
+    property.location.toLowerCase().includes(locationFilter.toLowerCase()) &&  property.name.toLowerCase().includes(apartment.toLowerCase())
+  );
+     
   
     return (
-      <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-        {properties.map((property, index) => (
-          <div
-            key={property.id}
-            className={`bg-white p-4 shadow-md rounded-lg cursor-pointer hover:shadow-xl ${
-              selectedProperty === property ? "border-2 border-blue-500" : ""
-            }`}
-            onClick={() => handlePropertyClick(property)}
-          >
-            <img className="object-cover w-52 h-52" src={property.image} alt="" />
+
+      <div>
+      <input
+        type="text"
+        placeholder="Search by location"
+        value={locationFilter}
+        onChange={(e) => setLocationFilter(e.target.value)}
+        className="m-4 outline-none text-black border-black border-2 p-2 rounded-lg"
+      />
+      <input
+        type="text"
+        placeholder="Search by apartment"
+        value={apartment}
+        onChange={(e) => setApartment(e.target.value)}
+        className="m-4 outline-none text-black border-black border-2 p-2 rounded-lg"
+      />
+    
+    <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+    {filteredProperties.map((property, index) => (
+        <div
+          key={property.id}
+          className={`bg-white p-4 shadow-md rounded-lg cursor-pointer hover:shadow-xl h-[300px] ${
+            selectedProperty === property ? "border-2 border-blue-500" : ""
+          }`}
+          onClick={() => handlePropertyClick(property)}
+        >
+          <div className="h-1/2">
+            <img
+              className="object-cover w-full h-full"
+              src={property.image}
+              alt=""
+            />
+          </div>
+          <div className="h-1/2 gap-3 space-y-3">
             <h2 className="text-lg font-semibold">{property.name}</h2>
             <p className="text-gray-500">{property.location}</p>
             <p className="text-gray-500">{property.price}</p>
-
-
+            <p>{property.deal}</p>
           </div>
-        ))}
-      </div>
-    );
-  };
+        </div>
+      ))}
+    </div>
+    </div>
+  );
+};
   
   export default Property
