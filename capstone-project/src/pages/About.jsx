@@ -1,39 +1,29 @@
 import React from 'react';
-import picture from "../photos/istockphoto-1409298953-170667a.webp";
-
-
-
-
+import picture from "../photos/pexels-erik-mclean-9890656.jpg";
+import picture2 from "../photos/pexels-binyamin-mellish-186077.jpg"
 import { Carousel } from 'flowbite-react';
 
- function SlidingInterval() {
+
+
+const About = () => {
   return (
-    <Carousel slideInterval={5000}>
-      <img
-        alt="..."
-        src="https://flowbite.com/docs/images/carousel/carousel-1.svg"
-      />
-      <img
-        alt="..."
-        src="https://flowbite.com/docs/images/carousel/carousel-2.svg"
-      />
-      <img
-        alt="..."
-        src="https://flowbite.com/docs/images/carousel/carousel-3.svg"
-      />
-      <img
-        alt="..."
-        src="https://flowbite.com/docs/images/carousel/carousel-4.svg"
-      />
-      <img
-        alt="..."
-        src="https://flowbite.com/docs/images/carousel/carousel-5.svg"
-      />
-    </Carousel>
-  )
+    <>
+      <div className="flex flex-col md:flex-col">
+        <div className='w-full'>
+          <img
+           className="w-full h-64 object-cover"
+            src={picture}
+            alt=""
+          />
+        </div>
+        <div className='flex mt-36'>
+            <h1>Our mission </h1>
+            <img className="w-80" src={picture2}alt="" />
+        </div>
+      
+      </div>
+    </>
+  );
 }
-
-
-
 
 export default About;

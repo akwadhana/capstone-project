@@ -236,7 +236,7 @@ export const properties = [
   {
     id: 1,
     name: "2BedRoom Apartment",
-    // image: img[0].pic,
+    image: img[0].pic,
     image2:img[1].pic ,
     image3:img[2].pic ,
     image4:img[3].pic ,
@@ -360,30 +360,30 @@ export const properties = [
 ];
 
 const Property = ({ onSelectProperty }) => {
-    const [selectedProperty, setSelectedProperty] = useState(null);
-    const [locationFilter, setLocationFilter] = useState("");
-    const [apartment, setApartment] = useState("");
-    const navigate = useNavigate();
-  
-    const handlePropertyClick = (property) => {
-      setSelectedProperty(property);
-      navigate(`/property/${property.id}`);
-    };
+  const [selectedProperty, setSelectedProperty] = useState(null);
+  const [locationFilter, setLocationFilter] = useState("");
+  const [apartment, setApartment] = useState("");
+  const navigate = useNavigate();
 
-     const filteredProperties = properties.filter((property) =>
-    property.location.toLowerCase().includes(locationFilter.toLowerCase()) &&  property.name.toLowerCase().includes(apartment.toLowerCase())
+  const handlePropertyClick = (property) => {
+    setSelectedProperty(property);
+    navigate(`/property/${property.id}`);
+  };
+
+  const filteredProperties = properties.filter(
+    (property) =>
+      property.location.toLowerCase().includes(locationFilter.toLowerCase()) &&
+      property.name.toLowerCase().includes(apartment.toLowerCase())
   );
-     
-  
-    return (
 
-      <div>
+  return (
+    <div>
       <input
         type="text"
         placeholder="Search by location"
         value={locationFilter}
         onChange={(e) => setLocationFilter(e.target.value)}
-        className="m-4 outline-none text-black border-black border-2 p-2 rounded-lg"
+        className="m-4 outline-none text-black border-black border-2 p-2 rounded-lg focus:outline-black"
       />
       <input
         type="text"
@@ -392,34 +392,44 @@ const Property = ({ onSelectProperty }) => {
         onChange={(e) => setApartment(e.target.value)}
         className="m-4 outline-none text-black border-black border-2 p-2 rounded-lg"
       />
-    
-    <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-    {filteredProperties.map((property, index) => (
-        <div
-          key={property.id}
-          className={`bg-white p-4 shadow-md rounded-lg cursor-pointer hover:shadow-xl h-[300px] ${
-            selectedProperty === property ? "border-2 border-blue-500" : ""
-          }`}
-          onClick={() => handlePropertyClick(property)}
-        >
-          <div className="h-1/2">
-            <img
-              className="object-cover w-full h-full"
-              src={property.image}
-              alt=""
-            />
-          </div>
-          <div className="h-1/2 gap-3 space-y-3">
-            <h2 className="text-lg font-semibold">{property.name}</h2>
-            <p className="text-gray-500">{property.location}</p>
-            <p className="text-gray-500">{property.price}</p>
-            <p>{property.deal}</p>
-          </div>
+
+      {filteredProperties.length === 0 ? (
+        <p className="m-4 text-center mt-40 text-xl font-bold"> Not available</p>
+      ) : (
+        <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+          {filteredProperties.map((property, index) => (
+            <div
+              key={property.id}
+              className={`bg-white p-4 shadow-md rounded-lg cursor-pointer hover:shadow-xl h-[300px] ${
+                selectedProperty === property ? search : ""
+              }`}
+              onClick={() => handlePropertyClick(property)}
+            >
+              <div className="h-1/2">
+                <img
+                  className="object-cover w-full h-full"
+                  src={property.image}
+                  alt=""
+                />
+              </div>
+              <div className="h-1/2 gap-3 space-y-3">
+                <h2 className="text-lg font-semibold">{property.name}</h2>
+                <p className="text-gray-500">{property.location}</p>
+                <p className="text-gray-500">{property.price}</p>
+                <p>{property.deal}</p>
+              </div>
+            </div>
+          ))}
         </div>
-      ))}
-    </div>
+      )}
     </div>
   );
 };
-  
-  export default Property
+
+export default Property;
+
+
+
+
+
+

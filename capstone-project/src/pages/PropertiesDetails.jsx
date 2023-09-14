@@ -1,8 +1,10 @@
 import React from "react";
-import { useParams } from "react-router-dom";
+import { useParams,useNavigate } from "react-router-dom";
 import { properties } from "./Property";
+import Button from "../components/Button";
 
 const ImageGallery = ({ images, information }) => (
+
   <div>
     <div className="w-60 flex gap-5">
       {images.map((image, index) => (
@@ -25,6 +27,10 @@ const PropertiesDetails = () => {
   const propertyDetails = properties.find(
     (property) => property.id === parseInt(id)
   );
+const navigate=useNavigate()
+  const whatsapp=()=>{
+    navigate("/about")
+  }
 
   return (
     <div className="bg-white p-4 h-screen rounded-lg">
@@ -40,12 +46,13 @@ const PropertiesDetails = () => {
                 propertyDetails.image5,
               ]}
              
-            />
+            />   
           </div>
 
           <h2 className="text-lg font-semibold">{propertyDetails.name}</h2>
           <p className="text-gray-500">{propertyDetails.location}</p>
           <p> {propertyDetails.information}</p>
+  <button onClick={whatsapp}>hii</button>
         </div>
       )}
     </div>

@@ -6,6 +6,8 @@ import About from "./pages/About";
 import PropertiesDetails from "./pages/PropertiesDetails";
 import Navbar from "./components/Navbar";
 import Property from "./pages/Property";
+import Contact from "./pages/Contact";
+
 
 function App() {
   return (
@@ -16,6 +18,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/Property" element={<Property />} />
         <Route path="/property/:id" element={<PropertiesDetails />} />
+        <Route path="/contact/" element={<Contact />} />
       </Routes>
     </Router>
   );
