@@ -383,7 +383,7 @@ const Property = ({ onSelectProperty }) => {
         placeholder="Search by location"
         value={locationFilter}
         onChange={(e) => setLocationFilter(e.target.value)}
-        className="m-4 outline-none text-black border-black border-2 p-2 rounded-lg focus:outline-black"
+        className="m-4 outline-none text-black border-black border-2 p-2 rounded-lg"
       />
       <input
         type="text"

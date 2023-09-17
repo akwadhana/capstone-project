@@ -29,7 +29,7 @@ const PropertiesDetails = () => {
   );
 const navigate=useNavigate()
   const whatsapp=()=>{
-    navigate("/about")
+    navigate("/Contact")
   }
 
   return (
@@ -52,7 +52,10 @@ const navigate=useNavigate()
           <h2 className="text-lg font-semibold">{propertyDetails.name}</h2>
           <p className="text-gray-500">{propertyDetails.location}</p>
           <p> {propertyDetails.information}</p>
-  <button onClick={whatsapp}>hii</button>
+          <div className="bg-black text-white self-center mt-8 p-4 rounded-md w-48 mx-auto " >
+          <button onClick={whatsapp}>click to reach us for more information</button>
+          </div>
+ 
         </div>
       )}
     </div>

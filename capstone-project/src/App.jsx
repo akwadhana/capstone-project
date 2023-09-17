@@ -8,11 +8,21 @@ import Navbar from "./components/Navbar";
 import Property from "./pages/Property";
 import Contact from "./pages/Contact";
 
+import Theme from "./Theme";
+
+
+
 
 function App() {
+
+ 
   return (
+    <>
+ 
     <Router>
+
       <Navbar />
+     
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
@@ -21,6 +31,7 @@ function App() {
         <Route path="/contact/" element={<Contact />} />
       </Routes>
     </Router>
+    </>
   );
 }
 

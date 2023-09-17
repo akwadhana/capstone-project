@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from "react-router-dom";
+import Theme from '../Theme';
 
 const NavBar = () => {
   return (
@@ -9,8 +10,9 @@ const NavBar = () => {
         <NavItem to="/about" label="About" />
         <NavItem to="/property" label="Properties" />
         <NavItem to="/contact" label="Contact" /> 
+        <Theme/>
+   
       </ul>
-     
     </nav>
   );
 };
