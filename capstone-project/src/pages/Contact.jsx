@@ -31,7 +31,7 @@ e.target.reset()
 
   return (
 <>
-<div className="flex flex-col md:flex-row md:h-screen gap-40">
+<div style={{display: 'flex', alignItems: 'center', justifyContent: 'space-evenly'}} className="flex flex-col md:flex-row md:h-screen">
 <div className= "md:w-1/2">
 
 <img src={image} alt="" className="object-cover w-full h-[45vh]  md:mt-0 md:h-full" />
@@ -72,7 +72,7 @@ e.target.reset()
   placeholder="Enter your message"
 />
 
-<div className= "bg-black mt-3 text-4xl text-white p-3  rounded-lg  items-center justify-center py-3 px-40 h-16">
+<div style={{ backgroundColor: "rgb(43, 21, 21)" }} className= "bg-black mt-3 text-4xl text-white p-3  rounded-lg  items-center justify-center py-3 px-40 h-16">
     <button >send</button>
 </div>
 </div>

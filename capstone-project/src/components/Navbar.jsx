@@ -4,7 +4,10 @@ import Theme from "../Theme";
 
 const NavBar = () => {
   return (
-    <nav className="bg-gray w-full bg-black px-4 flex justify-between">
+    <nav
+      style={{ backgroundColor: "rgb(43, 21, 21)" }}
+      className="bg-gray w-full bg-black px-4 flex justify-between"
+    >
       <Theme />
       <ul className="flex justify-end space-x-6 py-4 px-4">
         <NavItem to="/" label="Home" />

@@ -66,7 +66,7 @@ const PropertiesDetails = () => {
                 </h2>
                 <p className="text-gray-500">{propertyDetails.location}</p>
                 <p>{propertyDetails.information}</p>
-                <div className="bg-black text-white self-center mt-8 p-4 rounded-md w-48 mx-auto">
+                <div style={{ backgroundColor: "rgb(43, 21, 21)", width: "50vw", display: 'flex', alignItems: 'center', justifyContent: 'center' }} className="bg-black text-white self-center mt-8 p-4 rounded-md w-48 mx-auto">
                   <button onClick={whatsapp}>
                     Click to reach us for more information
                   </button>
