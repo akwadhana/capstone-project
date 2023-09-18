@@ -23,7 +23,7 @@ const Home = () => {
           <h1 className="text-3xl font-bold px-8">Welcome to CaramelCrest Properties</h1>
           <p className="mt-12 px-8">Step into the world of [Your Real Estate Agency], where we transform your real estate aspirations into tangible results. Whether you're in the market to buy, sell, or invest, our seasoned experts are at your side, offering unwavering support throughout your journey. Discover our curated collection of [Your City]'s finest properties and unlock the ideal place to make your own."</p>
         </div>
-          <div className="bg-black text-white self-center mt-8 p-4 rounded-md">
+          <div className="bg-black text-white self-center mt-8 p-4 rounded-md ">
           <Link to='/property'> <button>Check out more of our properties </button></Link>
       
       </div>
