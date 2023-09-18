@@ -10,9 +10,12 @@ import {toast} from 'react-toastify'
 const Contact = () => {
   const form=useRef();
 
+  const apiKey=import.meta.env.VITE_API_KEY
+  const apiKeys =import.meta.env.VITE_API_KEY2
+  const keys=import.meta.env.VITE_API_KEY3
 const emailSubmit=(e)=>{
 e.preventDefault();
-emailjs.sendForm('service_oraturc', 'template_hnb3b68',form.current, 'KX-vACwNiCBkIIrHT')
+emailjs.sendForm(keys, apiKeys,form.current, apiKey)
 .then((result) => {
     console.log(result.text);
     toast.success(
