@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
-    <div className="flex flex-row md:flex-row md:h-screen">
+    <div className="flex flex-col md:flex-row md:h-screen">
       {/* Left Side - Image */}
       <div className="md:w-1/2">
         <img
@@ -18,13 +18,13 @@ const Home = () => {
       </div>
 
       {/* Right Side - Navigation and Content */}
-      <div className="md:w-1/2 flex flex-col bg-white">
-        <div className="text-center mt-8">
-          <h1 className="text-3xl font-bold">Welcome to CaramelCrest Properties</h1>
-          <p className="mt-12">Step into the world of [Your Real Estate Agency], where we transform your real estate aspirations into tangible results. Whether you're in the market to buy, sell, or invest, our seasoned experts are at your side, offering unwavering support throughout your journey. Discover our curated collection of [Your City]'s finest properties and unlock the ideal place to make your own."</p>
+      <div className="md:w-1/2 flex flex-col md:self-center bg-white">
+        <div className="text-center">
+          <h1 className="text-3xl font-bold px-8">Welcome to CaramelCrest Properties</h1>
+          <p className="mt-12 px-8">Step into the world of [Your Real Estate Agency], where we transform your real estate aspirations into tangible results. Whether you're in the market to buy, sell, or invest, our seasoned experts are at your side, offering unwavering support throughout your journey. Discover our curated collection of [Your City]'s finest properties and unlock the ideal place to make your own."</p>
         </div>
           <div className="bg-black text-white self-center mt-8 p-4 rounded-md">
-          <Link to='/property'> <button>check out properties </button></Link>
+          <Link to='/property'> <button>Check out more of our properties </button></Link>
       
       </div>
       </div>

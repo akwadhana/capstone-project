@@ -377,26 +377,26 @@ const Property = ({ onSelectProperty }) => {
   );
 
   return (
-    <div>
+    <div className="px-4">
       <input
         type="text"
         placeholder="Search by location"
         value={locationFilter}
         onChange={(e) => setLocationFilter(e.target.value)}
-        className="m-4 outline-none text-black border-black border-2 p-2 rounded-lg"
+        className="m-4 outline-none text-black border-black border-2 p-2 rounded-lg focus:border-gray-200 focus:ring-gray-200 focus:border-opacity-50"
       />
       <input
         type="text"
         placeholder="Search by apartment"
         value={apartment}
         onChange={(e) => setApartment(e.target.value)}
-        className="m-4 outline-none text-black border-black border-2 p-2 rounded-lg"
-      />
+        className="m-4 outline-none text-black border-black border-2 p-2 rounded-lg focus:border-gray-200 focus:ring-gray-200 focus:border-opacity-50"
+        />
 
       {filteredProperties.length === 0 ? (
         <p className="m-4 text-center mt-40 text-xl font-bold"> Not available</p>
       ) : (
-        <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+        <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mt-3">
           {filteredProperties.map((property, index) => (
             <div
               key={property.id}
