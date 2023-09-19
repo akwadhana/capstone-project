@@ -8,7 +8,7 @@ const About = () => {
   const list = [];
   return (
     <div>
-      <ScrollAnimation />
+      {/* <ScrollAnimation /> */}
       <div className="flex flex-col relative ">
         <div className="w-full">
           <img className="w-full h-[50vh] object-cover" src={picture} alt="" />

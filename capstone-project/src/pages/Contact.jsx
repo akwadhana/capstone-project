@@ -9,15 +9,15 @@ import image from "../photos/pexels-curtis-adams-8031899.jpg";
 const Contact = () => {
   const form = useRef();
 
-  const apiKey = import.meta.env.VITE_API_KEY;
-  const apiKeys = import.meta.env.VITE_API_KEY2;
-  const keys = import.meta.env.VITE_API_KEY3;
+  // const apiKey = import.meta.env.VITE_API_KEY;
+  // const apiKeys = import.meta.env.VITE_API_KEY2;
+  // const keys = import.meta.env.VITE_API_KEY3;
   const emailSubmit = (e) => {
     e.preventDefault();
-    emailjs.sendForm(keys, apiKeys, form.current, apiKey).then(
+    emailjs.sendForm("service_oraturc", "template_hnb3b68", form.current, "KX-vACwNiCBkIIrHT").then(
       (result) => {
         console.log(result.text);
-        toast.success(<>Successful check your mai</>);
+        toast.success(<>Successful check your mail for more information</>);
       },
       (error) => {
         console.log(error.text);
