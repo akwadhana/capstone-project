@@ -34,7 +34,7 @@ const PropertiesDetails = () => {
   useEffect(() => {
     setTimeout(() => {
       setIsLoading(false); // Set isLoading to false when data is available
-    }, 5000); // Adjust the timeout duration as needed
+    }, 3000); // Adjust the timeout duration as needed
   }, []);
 
   const loadingSpinner = (

@@ -12,7 +12,7 @@ const About = () => {
       <div className="flex flex-col relative ">
         <div className="w-full">
           <img className="w-full h-[50vh] object-cover" src={picture} alt="" />
-          <h1 className="text-center mt-8 font-extrabold text-3xl absolute top-11 left-1/2 transform -translate-x-1/2 text-white">
+          <h1 className="text-center mt-48 font-extrabold text-3xl absolute top-11 left-1/2 transform -translate-x-1/2 text-white">
             CARAMELCREST PROPERTIES
           </h1>
         </div>

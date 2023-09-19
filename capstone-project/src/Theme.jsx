@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import { ThemeContext } from "./context/ThemeContextProvider";
-import { BsFillSunFill } from "react-icons/bs";
+import { BsFillHouseFill } from "react-icons/bs";
 
 const Theme = () => {
   const { theme, toggleTheme } = useContext(ThemeContext);
@@ -11,7 +11,7 @@ const Theme = () => {
         className="bg-black text-white rounded-md p-1"
         onClick={toggleTheme}
       >
-        <BsFillSunFill className="text-white w-8 h-8" />
+        <BsFillHouseFill className="text-white w-8 h-8" />
       </button>
     </div>
   );
