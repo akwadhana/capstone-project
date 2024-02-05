@@ -22,19 +22,19 @@ const Home = () => {
           <h1 className="text-3xl font-bold px-8">
             Welcome to CaramelCrest Properties
           </h1>
-          <p className="mt-12 px-8">
+          <p className="mt-4 px-8 md:px-14">
             Step into the world of [Your Real Estate Agency], where we transform
             your real estate aspirations into tangible results. Whether you're
             in the market to buy, sell, or invest, our seasoned experts are at
             your side, offering unwavering support throughout your journey.
-            Discover our curated collection of [Your City]'s finest properties
+            Discover our curated collection of Your City's finest properties
             and unlock the ideal place to make your own."
           </p>
         </div>
-        <div style={{ backgroundColor: "rgb(43, 21, 21)" }} className="bg-black text-white self-center mt-8 p-4 rounded-md ">
+        <div style={{ backgroundColor: "rgb(43, 21, 21)" }} className="bg-black w-52 lg:w-72 text-white lg:self-center lg:mt-8 rounded-md p-4 self-center ">
           <Link to="/property">
             {" "}
-            <button>Check out more of our properties </button>
+            <button className="">Check out more of our properties </button>
           </Link>
         </div>
       </div>

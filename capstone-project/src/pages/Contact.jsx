@@ -52,7 +52,7 @@ const Contact = () => {
               htmlFor="name"
             ></label>
             <input
-              className="border-2 border-gray-300 rounded-md  w-96 py-3 px-9 my-2  "
+              className="border-2 border-gray-300 rounded-md  p-6 text-center h-4 lg:w-96 lg:py-7 lg:px-9 lg:my-2  "
               type="text"
               id="name"
               name="name"
@@ -64,7 +64,7 @@ const Contact = () => {
               htmlFor="email"
             ></label>
             <input
-              className="border-2 border-gray-300 rounded-md  w-96 py-3 px-5 my-2"
+              className="border-2 border-gray-300 rounded-md p-6 text-center h-4  lg:w-96 lg:py-7 lg:px-5 my-2"
               type="email"
               id="email"
               name="email"
@@ -77,7 +77,7 @@ const Contact = () => {
               htmlFor="message"
             ></label>
             <textarea
-              className="border-2 border-gray-300 rounded-md  w-96 py-12 px-5 my-2"
+              className="border-2 border-gray-300 rounded-md text-center  p-10 lg:w-96 lg:py-12 lg:px-5 my-2"
               id="message"
               name="message"
               placeholder="Enter your message"
@@ -85,7 +85,7 @@ const Contact = () => {
 
             <div
               style={{ backgroundColor: "rgb(43, 21, 21)" }}
-              className="bg-black mt-1 text-4xl text-white p-3  rounded-lg  items-center justify-center py-3 px-40 h-16"
+              className="bg-black lg:mt-6 lg:text-4xl text-white lg:p-3  rounded-lg  items-center justify-center lg:py-3 lg:px-40 lg:h-16 p-8 py-2"
             >
               <button>send</button>
             </div>
